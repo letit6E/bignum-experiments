@@ -36,7 +36,18 @@ def solve(coeffs, right_values, variables_count, equations_count):
 
 	# applying approximation of coefficients
 	for i in range(equations_count):
-		matrix[i] = list(map(lambda x: int(x * 10 ** N), matrix[i] + [right_values[i]]))
+		# matrix[i] = list(map(lambda x: int(x * 10 ** N), matrix[i] + [right_values[i]]))
+		matrix[i] = list(
+			map(
+				lambda x: int(
+					(
+							str(x) + max(0, N - len(str(x)) + str(x).find('.') + 1) * '0'
+					).replace('.', '')
+				),
+				matrix[i] + [right_values[i]]
+			)
+		)
+
 
 	triangular_form = int_bring_triangular_form(matrix)
 
@@ -45,8 +56,8 @@ def solve(coeffs, right_values, variables_count, equations_count):
 	for row in triangular_form[::-1]:
 		ans.append(
 			Fraction(
-				row[-1] - sum(ans[i] * row[-i - 2] for i in range(len(ans))),
-				row[-len(ans) - 2]
+				Fraction(row[-1]) - sum(ans[i] * Fraction(row[-i - 2]) for i in range(len(ans))),
+				Fraction(row[-len(ans) - 2])
 			)
 		)
 
