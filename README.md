@@ -1,2 +1,2 @@
 # bignum-experiments
-Experiments on the efficiency of long arithmetic as a replacement for floating point
+Experiments on the efficiency of bignum arithmetic as a replacement for floating point
