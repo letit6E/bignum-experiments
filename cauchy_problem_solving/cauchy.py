@@ -1,5 +1,4 @@
 from fractions import Fraction
-from math import floor
 
 
 def get_tags(tags_diff_parameter, left_bound, right_bound, start_tag):

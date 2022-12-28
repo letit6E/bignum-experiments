@@ -1,4 +1,4 @@
-from fractions import *
+from fractions import Fraction
 
 from cauchy import get_tags
 
