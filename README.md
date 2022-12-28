@@ -1,5 +1,7 @@
 # Bignum arithmetic experiments
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7515d5b9937840c98b8a2b4a0b11e7de)](https://app.codacy.com/gh/letit6E/bignum-experiments?utm_source=github.com&utm_medium=referral&utm_content=letit6E/bignum-experiments&utm_campaign=Badge_Grade_Settings)
+
 ## Description
 
 This repository is made for experiments implemented in Python, comparing floating-point algorithms and algorithms with bignum arithmetic that can mitigate floating-point error.
