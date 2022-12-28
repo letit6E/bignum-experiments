@@ -1,3 +1,4 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d7fb72f0e9dc464ab2b6404dac953533)](https://www.codacy.com/gh/letit6E/bignum-experiments/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=letit6E/bignum-experiments&amp;utm_campaign=Badge_Grade)
 # Bignum arithmetic experiments
 
 ## Description
